@@ -31,7 +31,9 @@ print('Date 1: ${A} \nDate 2: ${B}');
 }
 
 void ex06_no03(){
-  
+  var num_result = 77.5;
+  var calculate = convert(num_result);
+  print(calculate);
 }
 
 

@@ -24,3 +24,31 @@ int Date(DateTime i, DateTime j) { //For question 2
 Duration durationDiff = j.difference(i); 
  return durationDiff.inDays.abs(); 
 } 
+
+
+convert (i){
+  var element_liste = 0;
+  var cote ={'A+': '95=<i=<100', 'A': '91.5=<i=<94.99', 'A-': '88=<i=<87.99', 'B+': '84.5=<i=<87.99', 'B': '81=<i=<84.49',
+            'B-': '77.5=<i=<80.99', 'C+': '74=<i=<77.49', 'C': '70.5=<i=<73.99', 'C-': '67=<i=<70.49', 'D+': '63.5=<i=<66.99',
+            'D': '60=<i=<63.49', 'E': '0=<i=<59.99'};
+  
+  if (i>=95 && i<=100) {element_liste = 0;}
+  if (i>=91.5 && i<=94.99) {element_liste = 1;}
+  if (i>=88 && i<=87.99) {element_liste = 2;}
+  if (i>=84.5 && i<=87.99) {element_liste = 3;}
+  if (i>=81 && i<=84.49) {element_liste = 4;}
+  if (i>=77.5 && i<=80.99) {element_liste = 5;}
+  if (i>=74 && i<=77.49) {element_liste = 6;}
+  if (i>=70.5 && i<=73.99) {element_liste = 7;}
+  if (i>=67 && i<=70.49) {element_liste = 8;}
+  if (i>=63.5 && i<=66.99) {element_liste = 9;}
+  if (i>=60 && i<=63.49) {element_liste = 10;}
+  if (i>=0 && i<=59.99) {element_liste = 11;}
+   
+  var grade = cote.keys.toList(); 
+  var note = grade[element_liste];
+  return note;
+  
+}
+
+
