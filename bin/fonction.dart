@@ -48,7 +48,7 @@ convert (i) {
   if (i >= 60   && i <= 63.49) {element_liste = 10;}
   if (i >= 0    && i <= 59.99) {element_liste = 11;}
    
-  var grade = cote.keys.toList(); 
+  var grade = cote.keys.toList (); 
   var note = grade[element_liste];
   return note;
 }

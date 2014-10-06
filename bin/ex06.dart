@@ -42,7 +42,7 @@ void ex06_no03() {
 }
 
 
-void ex06_no04(){
+void ex06_no04() {
   print('Number 5: \n Question: Given a list of names, make a list of three lists, first with names shorter than 8 letters,\n           second with names longer than 8 letters, and third with names that are 8 letters long.');
   var names = ['Olivier', 'Léa','Geneviève', 'Samuel','George', 'Andrews', 'William', 'Philippe', 'Jean-Dominic']; 
   List list = liste_Mane_list (names);  
