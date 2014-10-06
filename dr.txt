@@ -1,0 +1,13 @@
+ex06
+
+attention: formatage (voir: https://www.dartlang.org/articles/style-guide/)
+consultez mes changements
+
+s'il vous plaît séparer réponses avec une ligne blanche
+
+essayez d'utiliser les dossiers bin et lib 
+
+ex06_no02
+
+A --> a
+B --> b
