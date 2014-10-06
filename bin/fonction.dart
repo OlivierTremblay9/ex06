@@ -21,9 +21,6 @@ int Date(DateTime i, DateTime j) { //For question 2
 
 convert (i) {
   var element_liste = 0;
-
-
-
   var cote = {'A+': '95=<i=<100', 
               'A': '91.5=<i=<94.99', 
               'A-': '88=<i=<87.99', 
@@ -70,12 +67,12 @@ List liste_Mane_list (List threeList) {
    if (inc > 8 ) {longer_than_8.add(threeList[n]);}
   
   
-} 
+   } 
    returnList.add('  Names shorter than 8 letters: $shorter_than_8 \n      Names containe 8 letters: $height_letters_long \n      Names height than 8 letters: $longer_than_8 \n'); 
    return returnList; 
 
 
- } 
+} 
 
 
 
