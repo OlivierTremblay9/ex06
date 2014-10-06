@@ -52,3 +52,35 @@ convert (i){
 }
 
 
+List liste_Mane_list (List threeList) {
+  List shorter_than_8 = new List ();
+  List longer_than_8 = new List ();
+  List height_letters_long = new List ();
+  List returnList = new List ();
+
+  for (var n = 0; n < threeList.length; n++) {
+   var inc = threeList[n].length;
+   if (inc < 8 ) {shorter_than_8.add(threeList[n]);}
+   if (inc == 8 ) {height_letters_long.add(threeList[n]);}
+   if (inc > 8 ) {longer_than_8.add(threeList[n]);}
+  
+  
+} 
+   returnList.add('  Names shorter than 8 letters: $shorter_than_8 \n      Names containe 8 letters: $height_letters_long \n      Names height than 8 letters: $longer_than_8 \n'); 
+   return returnList; 
+
+
+ } 
+
+
+
+
+
+
+
+
+
+
+
+
+
