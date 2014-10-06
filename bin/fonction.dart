@@ -21,18 +21,18 @@ int Date(DateTime i, DateTime j) { //For question 2
 
 convert (i) {
   var element_liste = 0;
-  var cote = {'A+': '95=<i=<100', 
-              'A': '91.5=<i=<94.99', 
-              'A-': '88=<i=<87.99', 
-              'B+': '84.5=<i=<87.99', 
-              'B': '81=<i=<84.49',
-              'B-': '77.5=<i=<80.99', 
-              'C+': '74=<i=<77.49', 
-              'C': '70.5=<i=<73.99', 
-              'C-': '67=<i=<70.49', 
-              'D+': '63.5=<i=<66.99',
-              'D': '60=<i=<63.49', 
-              'E': '0=<i=<59.99'};
+  var cote = {'A+': '95 = <i =< 100', 
+              'A': '91.5 =< i=< 94.99', 
+              'A-': '88 =< i =< 87.99', 
+              'B+': '84.5 =< i =< 87.99', 
+              'B': '81 =< i =< 84.49',
+              'B-': '77.5 =< i =< 80.99', 
+              'C+': '74 =< i =< 77.49', 
+              'C': '70.5 =< i= <73.99', 
+              'C-': '67 =< i =<70.49', 
+              'D+': '63.5 =< i =< 66.99',
+              'D': '60 =< i =< 63.49', 
+              'E': '0 =< i =< 59.99'};
 
   
   if (i >= 95   && i <= 100)   {element_liste = 0;}
@@ -65,9 +65,8 @@ List liste_Mane_list (List threeList) {
    if (inc < 8 ) {shorter_than_8.add(threeList[n]);}
    if (inc == 8 ) {height_letters_long.add(threeList[n]);}
    if (inc > 8 ) {longer_than_8.add(threeList[n]);}
+  } 
   
-  
-   } 
    returnList.add('  Names shorter than 8 letters: $shorter_than_8 \n      Names containe 8 letters: $height_letters_long \n      Names height than 8 letters: $longer_than_8 \n'); 
    return returnList; 
 
@@ -76,13 +75,39 @@ List liste_Mane_list (List threeList) {
 
 
 
+List players_team (Map order) {
+ List team = new List ();
+ List players = new List ();
+ 
+ for (String NHL_teams in order.values) { 
+      if (!team.contains(NHL_teams)) { 
+        team.add(NHL_teams); 
+         players.add(new List()); 
+      } 
+    } 
+ 
+ team.sort(); 
+ 
 
 
+ for (String NHL_players in order.keys) { 
+     var thisteam = team.indexOf(order[NHL_players]); 
+     players.elementAt(thisteam).add(NHL_players); 
+    } 
 
 
+ for (int n = 0; n < players.length; n++) { 
+  players.elementAt(n).sort(); 
+ } 
 
-
-
-
-
+ List result = new List(); 
+  for (int n = 0; n < team.length; n++) { 
+    result.add('\n ${team.elementAt(n)} players are:'); //est-ce possible d'enlever la virgule? 
+     for(int v = 0; v < players.elementAt(n).length; v++) { 
+        result.add('\n       ${players.elementAt(n).elementAt(v)}'); 
+     } 
+  } 
+    
+   return result; 
+} 
 
