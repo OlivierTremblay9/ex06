@@ -1,5 +1,22 @@
 ex06
 
+?/20
+
+Lib
+-->
+lib
+
+lib/fonction.dart:
+library ex06;
+
+bin/rx06.dart:
+part of ex06;
+
+Il faut pas utiliser ..
+part '../Lib/fonction.dart';
+
+------
+
 attention: formatage (voir: https://www.dartlang.org/articles/style-guide/)
 consultez mes changements
 
