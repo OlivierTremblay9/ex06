@@ -1,6 +1,6 @@
 library define_functions;
 
-part '../Lib/fonction.dart';
+import 'package:ex06/fonction.dart';
 
 void ex06_no01() {
   var pal1 = 'Abc ded cba';
@@ -47,7 +47,7 @@ void ex06_no04() { //This code is inpi
   var names = ['Olivier', 'Léa','Geneviève', 'Samuel','George', 'Andrews', 'William', 'Philippe', 'Jean-Dominic']; 
   List list = liste_Mane_list (names);  
   print('    Names are: $names');
-  print('    Answer:\n   $list');
+  print('    \nAnswer:\n\n   $list');
   print('\n******************************************************************');
 }
 
@@ -71,7 +71,7 @@ void ex06_no05() { //This program was inspired by: https://github.com/leduy10/ex
   
   players_vs_team.forEach((k,v) => print('       $k'));
   
-  print('\nAnswer is:\n${players_team (players_vs_team)}');
+  print('\nAnswer is:\n\n${players_team (players_vs_team)}');
   
 }
 
