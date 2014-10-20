@@ -1,6 +1,4 @@
-library define_functions;
-
-import 'package:ex06/fonction.dart';
+import 'package:ex06/function.dart';
 
 void ex06_no01() {
   var pal1 = 'Abc ded cba';

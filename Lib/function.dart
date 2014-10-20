@@ -1,4 +1,4 @@
-library fonction;
+library function;
 
 bool palindrome(String sentence) { // For question #1 
   var beginning = 0;
