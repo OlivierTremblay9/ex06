@@ -1,5 +1,34 @@
 ex06
 
+17/20
+
+-1
+Lib
+-->
+lib
+
+-1
+formatage
+convert (i) { --> convert(i) {
+element_liste --> elementListe 
+liste_Mane_list --> listeManeList (Mane?, SVPL meilleur nom)
+int Date(DateTime i, DateTime j) { 
+--> 
+int date(DateTime i, DateTime j) {  (date?, SVPL meilleur nom)
+NHL_teams --> nhlTeams
+void ex06_no01() { --> no01() {
+
+void ex06_no04() { //This code is inpi
+//This code is inpi ?
+
+-1
+6.5
+Prepare two LISTS, one with the names of players and their clubs, 
+and the other with the names of clubs. Make the third LIST with clubs ordered 
+by their names, where each club is followed by its LIST of players.
+
+---
+
 ?/20
 
 Lib

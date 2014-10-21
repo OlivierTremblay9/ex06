@@ -29,7 +29,6 @@ void ex06_no02() {
   print('\n******************************************************************');
 }
 
-
 void ex06_no03() {
   var num_result = 77.5;
   var calculate = convert(num_result);
@@ -38,7 +37,6 @@ void ex06_no03() {
   print('   The result is:${calculate}');
   print('\n******************************************************************');
 }
-
 
 void ex06_no04() { //This code is inpi
   print('Number 4: \n Question: Given a list of names, make a list of three lists, first with names shorter than 8 letters,\n           second with names longer than 8 letters, and third with names that are 8 letters long.\n');
@@ -70,7 +68,6 @@ void ex06_no05() { //This program was inspired by: https://github.com/leduy10/ex
   players_vs_team.forEach((k,v) => print('       $k'));
   
   print('\nAnswer is:\n\n${players_team (players_vs_team)}');
-  
 }
 
 
